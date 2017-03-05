@@ -24,6 +24,7 @@
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
             placeholder="Ingrese su nombre">
+              <span id="nombre-error"></span>
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
@@ -43,7 +44,7 @@
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
           <div class="form-group">
-            <select class="form-control">
+            <select id="opcion" class="form-control">
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
@@ -61,9 +62,9 @@
               <span>Deseo recibir información vía email</span>
             </label>
           </div>
-          <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
+          <button id ="validar" class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
         </form>
-      </div>  
+      </div>
     </section>
     <!-- /container -->
     <script type='text/javascript' src='js/main.js'></script>
